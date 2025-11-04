@@ -1,4 +1,4 @@
-title: Tobias Analytica
-description: BI, ETL and dashboards — my public GitHub projects
+title: TobiasAnalytica
+description: Business Intelligence, ETL and dashboards — my public GitHub projects
 plugins:
   - jekyll-github-metadata
