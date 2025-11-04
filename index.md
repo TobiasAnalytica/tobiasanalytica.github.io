@@ -15,7 +15,8 @@ title: Repositories
 <div id="grid" class="grid">
 {% assign repos = site.github.public_repositories
   | where_exp: "r", "r.fork == false"
-  | where_exp: "r", "r.archived == false" %}
+  | where_exp: "r", "r.archived == false"
+  | where_exp: "r", "r.name != 'tobiasanalytica.github.io'"%}
 
 {% comment %} Pre-fill update time as a Unix timestamp for simple sorting in JS {% endcomment %}
 {% assign repos = repos | sort: "pushed_at" | reverse %}

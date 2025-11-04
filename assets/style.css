@@ -39,8 +39,26 @@ body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-appl
 .card a.title{color:var(--fg);text-decoration:none}
 .card a.title:hover{color:var(--accent)}
 .card p.desc{margin:.4rem 0 .7rem; color:var(--muted); min-height:2.6em}
-.meta{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center;color:var(--muted);font-size:.9rem}
-.badge{background:var(--chip); padding:.18rem .5rem; border-radius:.5rem}
+.meta{
+  display:flex;
+  gap:.6rem;
+  align-items:center;
+  color:var(--muted);
+  font-size:.9rem;
+  flex-wrap: nowrap;           /* var: wrap */
+}
+.badge{
+  background:var(--chip);
+  padding:.18rem .5rem;
+  border-radius:.5rem;
+  max-width: 120px;            /* ny */
+  white-space: nowrap;         /* ny */
+  overflow: hidden;            /* ny */
+  text-overflow: ellipsis;     /* ny */
+}
 .star{padding:.18rem .5rem; border-radius:.5rem; background:var(--accentSoft)}
-.updated{margin-left:auto}
+.updated{
+  margin-left:auto;
+  white-space: nowrap;         /* ny – hindrar radbrytning */
+}
 .topic{display:inline-block;background:var(--chip);padding:.15rem .45rem;border-radius:.45rem;font-size:.8rem;margin:.15rem .25rem 0 0}
