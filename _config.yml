@@ -1,0 +1,9 @@
+title: My Repositories
+description: Automatic list of my public GitHub repositories
+plugins:
+  - jekyll-github-metadata
+
+remote_theme: pages-themes/cayman@v0.2.0
+plugins:
+  - jekyll-github-metadata
+  - jekyll-remote-theme
